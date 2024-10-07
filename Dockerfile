@@ -1,6 +1,3 @@
-
-
-
 ARG os_to_use="ubuntu:22.04"
 
 FROM $os_to_use as default
