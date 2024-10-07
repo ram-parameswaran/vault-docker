@@ -1,12 +1,9 @@
-ARG ubuntu_version="22.04"
-#ARG vault_version="1.17.6+ent"
-#ARG terraform_version="1.9.7"
 
-#ENV ubuntu_version="22.04"
-#ENV vault_version="1.17.6+ent"
-#ENV terraform_version="1.9.7"
 
-FROM ubuntu:$ubuntu_version as default
+
+ARG os_to_use="ubuntu:22.04"
+
+FROM $os_to_use as default
 
 ARG vault_version="1.17.6+ent"
 ARG terraform_version="1.9.7"
